@@ -1,0 +1,136 @@
+.top_footer{
+  background-color: $header_color;
+  padding: 50px 0;
+}
+.top_footer .footer_blocks h3{
+  font-size: 18px;
+  color: #fff;
+  font-family: RobotoBold;
+}
+.top_footer .footer_blocks ul li a{
+  font-size: 14px;
+  color: #fff;
+  font-family: RobotoRegular;
+  &:hover{
+    color: $menu_bg_color;
+  }
+}
+.top_footer .footer_blocks i{
+  font-size: 30px;
+  color: #fff;
+}
+.top_footer .footer_blocks input{
+  border: none;
+  padding: 11px;
+  width: 100%;
+  background-color: #032e42;
+  color: #fff;
+
+}
+.top_footer .footer_blocks input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
+}
+.top_footer .footer_blocks input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
+}
+.top_footer .footer_blocks input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
+}
+.top_footer .footer_blocks input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
+}
+.top_footer .footer_blocks button{
+  padding: 5px 20px 5px 10px;
+  background-color: transparent;
+  &:hover{
+    background-color: rgba(255,255,255,0.2);
+  }
+}
+.top_footer .footer_blocks input{
+  margin-top: 13px;
+}
+
+.top_footer .footer_blocks button{
+  width: 100%;
+  margin-top: 13px;
+  font-size: 16px;
+  color: #fff;
+  font-family: RobotoBold;
+  border: none;
+  background-color: #1e73be;
+  padding: 8px;
+
+}
+.top_footer .footer_blocks button i{
+  margin-right: 10px;
+}
+.bottom_footer{
+  background-color: darken($header_color,5%);
+  padding: 15px 0;
+}
+.bottom_footer ul li,.bottom_footer ul li a{
+  color: #fff;
+  font-size: 14px;
+  font-family: RobotoRegular;
+  text-decoration: none;
+}
+.home_service_section  p{
+  color: #474747;
+  font-family: 'MyriadProSemibold';
+  font-size: 24px;
+  text-align: center;
+  max-width: 270px;
+  margin: 0 auto;
+   @include mq("phablet",max){
+     font-size: 20px;
+   }
+}
+.home_service_section img{
+  display: block;
+  margin: 0 auto;
+}
+.home_service_section  .service_img_content{
+  min-height: 110px;
+}
+.brands  {
+  padding: 30px 0;
+  .brands_img{
+    min-height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+.brands .col-lg-2{
+  display: table;
+  min-height: 100px;
+}
+.top_footer{
+  .footer_blocks{
+
+    @include mq( "phablet",max){
+      width: 100%!important;
+      text-align: center;
+    }
+  }
+  .soc_icons{
+    margin-top: 35px;
+  }
+}
+.bottom_footer{
+  ul{
+    li{
+      @include mq( "phablet",max){
+       display: block;
+      }
+    }
+  }
+}

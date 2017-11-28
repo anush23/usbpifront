@@ -1,0 +1,203 @@
+.home_center_part{
+  background-color: $bg_color;
+  padding: 55px 0;
+  border-bottom: 1px solid $border-color;
+
+}
+.categories_block_menu{
+   padding: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.categories_block{
+   width: 15.5%;
+  margin: 0 0.5%;
+  float: left;
+  border: 1px solid $border-color;
+  background-color: #fff;
+  position: relative;
+  @include mq("tablet-w",max){
+    width: 32%;
+    margin: 0 0.5% 15px;
+  }
+  @include mq("tablet-small",max){
+    width: 49%;
+    font-size: 16px;
+  }
+  .categories_link{
+    background-color: rgba(255,255,255,0.9);
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: $button_base_color;
+    font-size: 18px;
+    right: 0;
+    font-family: 'roboto_medium';
+    min-height: 53px;
+    @include border-radius(0 0 5px 5px);
+    padding: 5px;
+    display: table;
+    width: 101%;
+    line-height: 20px;
+    span{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    &:hover{
+      background-color: $menu_bg_color;
+    }
+  }
+  .categories_menu_border{
+    border: 1px solid #fff;
+    padding-top: 70px;
+  }
+}
+.home_teb{
+  margin-top: 55px;
+  border-bottom: 1px solid $border-color;
+  .nav-tabs  li {
+    a{
+      color: #fff;
+      font-size: 18px;
+      font-family: 'roboto_medium';
+      background-color: $button_base_color;
+      border-bottom: 3px solid #fff;
+      @include mq("tablet",max){
+        font-size: 14px;
+        padding: 10px 7px;
+      }
+    }
+    &.active{
+      a{
+        border-bottom: 3px solid $button_base_color;
+        &:hover{
+          background-color: $button_base_color;
+          color: #fff;
+        }
+        &:focus{
+          background-color: $button_base_color;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .tab-content > .tab-pane{
+    padding: 50px 0;
+  }
+  .tab-content{
+    &:before{
+      border-bottom: 4px solid $button_base_color;
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+.tab_main_content{
+  background-color: #fff;
+}
+.product_block{
+  width: 23.5%;
+  margin: 0.5%;
+  display: inline-block;
+  vertical-align: top;
+  @include border-radius(5px);
+  border: 1px solid $border-color;
+  padding: 15px 15px 0 15px;
+  position: relative;
+  min-height: 420px;
+  @include mq("desktop",max){
+    width: 32%;
+  }
+  @include mq("tablet-w",max){
+    width: 48%;
+  }
+  @include mq("tablet-small",max){
+    width: 98%;
+  }
+  img{
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .product_name,h3{
+    color: $button_base_color;
+    font-size: 18px;
+    font-family: 'roboto_medium';
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+ .product_name a{
+   color: $menu_bg_color;
+   font-size: 18px;
+   font-family: 'roboto_medium';
+   &:hover{
+     text-decoration: underline;
+   }
+ }
+  .product_category{
+    span{
+      color: #3d3d3d;
+    }
+  }
+  .price_section{
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    ul{
+      margin-left: 0;
+    }
+    li{
+      width: 50%;
+      padding: 0;
+      float: left;
+      text-align: center;
+      vertical-align: middle;
+
+    }
+    .product_price{
+      color: #000;
+      font-size: 22px;
+      font-family: 'RobotoBold';
+    }
+    .add_to_cart_btn{
+      width: 100%;
+      padding: 12px 5px;
+      @include border-radius(5px 0 5px 0);
+      border: 0;
+      color: #fff;
+      background-color: $button_base_color;
+      text-transform: uppercase;
+      i{
+        font-size: 18px;
+        margin-right: 3px;
+      }
+      &:hover{
+        background-color: $menu_bg_color;
+      }
+    }
+  }
+  .product_category{
+    margin-bottom: 55px;
+
+  }
+  .view_more_btn{
+    display: block;
+    background-color: $menu_bg_color;
+    color: #fff;
+    padding: 9px;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+
+  }
+}
+.home_service_section {
+  padding-top: 50px;
+
+}

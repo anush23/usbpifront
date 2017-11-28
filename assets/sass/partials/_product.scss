@@ -1,0 +1,123 @@
+.product_row{
+  padding: 15px 0;
+  border-bottom: 1px solid $border-color;
+  width: 100%;
+  float: left;
+  .product_brand{
+    color: #fff;
+    background-color: $button_base_color;
+    display: inline-block;
+    padding: 1px 5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .product_title{
+    color: #000;
+    font-family: 'RobotoBold';
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    @include mq("tablet",max){
+      font-size: 14px;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .product_image{
+    img{
+      display: block;
+      margin: 0 auto 15px;
+      max-width: 100%;
+    }
+  }
+}
+.qty_item{
+  float: right;
+  li{
+    vertical-align: middle;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  input{
+    padding: 7px;
+    max-width: 135px;
+    @include mq( "phablet",max){
+      max-width: 70px;
+    }
+  }
+  @include mq("tablet",max){
+    float: left;
+  }
+}
+.product_view_block{
+  padding: 5px 15px;
+  background-color: $button_base_color;
+  .product_view_item{
+    span{
+      font-size: 25px;
+      cursor: pointer;
+      color: #fff;
+      &.active{
+        color: $menu_bg_color;
+        cursor: default;
+      }
+      &:hover{
+        color: $menu_bg_color;
+      }
+    }
+    @include mq("phablet",max){
+      width: 100%;
+      margin-left: 1px;
+    }
+  }
+  li{
+    vertical-align: middle;
+  }
+}
+.product_info_section{
+  &.grid_view{
+    .product_row{
+      width: 50%;
+      float: left;
+    }
+    .product_info{
+      width: 100%!important;
+    }
+    .qty_item{
+      float: left;
+    }
+  }
+}
+.per_page_item{
+  p{
+    color: #fff;
+    margin-bottom: 0;
+  }
+  select{
+    width: 100px;
+    height: 32px;
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid $button_base_color;
+  }
+  @include mq("tablet",max){
+    width: 100%;
+    text-align: right;
+  }
+  @include mq("phablet",max){
+    text-align: left;
+  }
+}
+.favorite_btn{
+  min-width: 135px;
+  text-align: left;
+  i{
+    color: #fff;
+  }
+  &:hover{
+    i{
+      color: #fff!important;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.product_code {
+  a{
+    color: #35a4e0;
+    text-decoration: underline;
+  }
+}
+.checkout_step_item{
+  margin: 20px 0;
+  li{
+    padding-left: 0;
+  }
+}
+.product_total_price{
+  background-color: #35a4e0;
+  text-align: right;
+  padding: 5px 20px;
+  p{
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 16px;
+    span{
+      font-weight: 700;
+    }
+  }
+}
+.checkout_product{
+   .qty_item{
+     margin-top: 0;
+   }
+  .product_title{
+    margin-bottom: 0;
+  }
+}
+.form_field{
+  margin-bottom: 10px;
+  input,select,textarea{
+    @include border-radius(0);
+  }
+  textarea{
+    resize: none;
+    height: 80px;
+  }
+}
+.checkout_step{
+  display: none;
+  &.current{
+    display: block;
+  }
+  h4{
+    color: #000;
+    font-weight: 700;
+  }
+  .order_summery_info{
+    padding: 20px 0;
+    li{
+      color: #000;
+      span{
+        color: $button_base_color;
+      }
+    }
+  }
+  table{
+    th{
+      min-width: 150px;
+      color: #fff;
+      background-color: $button_base_color;
+    }
+  }
+  .total_info{
+    td{
+      color: #fff;
+      background-color: $button_base_color;
+      font-weight: 700;
+      padding: 2px 8px;
+    }
+  }
+}
+.form_blue_link{
+  margin-top: 30px;
+  text-decoration: underline;
+  color: $button_base_color;
+  display: inline-block;
+}

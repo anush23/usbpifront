@@ -1,0 +1,332 @@
+body{
+  font-size: 14px;
+  font-family: 'RobotoRegular';
+  color: $text-base_color;
+}
+ul{
+  margin-bottom: 0;
+}
+a,a:hover,a:focus{
+  text-decoration: none;
+  color: $text-base_color;
+}
+.full-width-left{
+  width: 100%;
+  float: left;
+}
+button, button:hover, button:focus,input:focus{
+  outline: none;
+}
+button,button:hover,a,a:hover{
+  @include transition(all 0.5s ease-in-out);
+}
+.margin-15{
+  margin: 15px 0;
+}
+.btn_default{
+  background-color: $button_base_color;
+  color: #fff;
+  padding: 8px 15px;
+  display: inline-block;
+  border: 0;
+  font-size: 15px;
+  i{
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+  }
+  &:hover{
+    background: $button_base_color;
+  }
+  @include mq( "phablet",max){
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+.product_price{
+  color: #000;
+  font-family: 'RobotoBold';
+  font-size: 20px;
+}
+.main_color_text{
+  color: $button_base_color;
+  font-family: 'RobotoBold';
+  font-size: 15px;
+}
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+
+.checkbox + label {
+  cursor: pointer;
+}
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 25px;
+  font-weight: 400;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: #eaeaea;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  border: 2px solid #000;
+  width: 12px;
+  height: 6px;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  -moz-transform: rotate(-50deg);
+  -o-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  opacity: 0;
+}
+.checkbox:checked + label:after {
+ opacity: 1;
+}
+.categories_checkbox label{
+  padding: 0!important;
+  a{
+    padding-left: 25px;
+    display: inline-block;
+  }
+}
+.radio {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+.radio + label {
+  cursor: pointer;
+}
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 20px;
+}
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #969696;
+  border-radius: 50%;
+  background: #efefef;
+}
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $button_base_color;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all .2s;
+}
+.radio:checked + label:after {
+  opacity: 1;
+}
+//.radio:focus + label:before {
+//  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+//}
+
+.product_view_block{
+  .pagination{
+    margin: 3px 10px;
+    @include mq("tablet",max){
+      float: right;
+      margin: 3px 0;
+    }
+    @include mq("phablet",max){
+      width: 100%;
+    }
+    li{
+      span{
+        background-color: transparent;
+        border: none;
+        color: #000;
+        padding: 3px 5px;
+        &:hover{
+          background-color: transparent;
+          color: #000;
+        }
+      }
+      a{
+        background-color: #fff;
+        border: none;
+        color: #fff;
+        padding: 3px 5px;
+        &:hover{
+          background-color: transparent;
+          color: $menu_bg_color;
+        }
+        &:focus{
+          background-color: transparent;
+          color: $menu_bg_color;
+        }
+      }
+      &.active{
+        a{
+          background-color: transparent;
+          color: $menu_bg_color;
+          font-weight: 700;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+.center_content{
+  margin: 20px 0;
+}
+.product_items_box{
+
+  padding: 15px;
+  background-color: $header_color;
+  color: #fff;
+  font-size: 18px;
+  max-width: 260px;
+  ul{
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  li{
+    padding: 5px 0;
+    border-bottom: 1px solid lighten($button_base_color,30%);
+
+  }
+  i.fa-shopping-cart{
+    font-size: 30px;
+    vertical-align: bottom;
+  }
+  .product_name{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 120px;
+    white-space: nowrap;
+    margin-bottom: 0;
+    float: left;
+    margin-right: 14px
+  }
+  input{
+    max-width: 50px;
+    padding: 0 5px;
+    color: #000;
+  }
+  .delete_item{
+    cursor: pointer;
+    &:hover{
+      color: $menu_bg_color;
+    }
+  }
+  .check_out_btn{
+    background-color: $button_base_color;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    &:hover{
+      color: #fff;
+      background-color: lighten($menu_bg_color,15%);
+    }
+  }
+}
+.delete_button{
+  display: inline-block;
+  background-color: #f2484a;
+  color: #fff;
+  font-size: 25px;
+  padding: 0 7px;
+  border: none;
+  &:hover{
+    background-color: darken(#f2484a,20%)
+  }
+}
+
+.jStar{
+  background: url("../images/stars.png") repeat-x!important;
+}
+.jRatingColor {
+  background-color: #868686!important;
+}
+.jRatingAverage {
+  background-color: #fed518!important;
+}
+.blue_line{
+  background-color: $button_base_color;
+  padding: 5px 20px;
+  p{
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+.about_us_banner{
+  background: url("../images/about-us-banner.jpg") no-repeat top center;
+  height: 400px;
+  background-size: cover;
+}
+.about_us_info{
+  background: rgba($button_base_color, 0.9);
+  padding: 30px 50px;
+  position: relative;
+  margin: -100px auto 100px;
+  color: #fff;
+  font-size: 16px;
+  max-width: 90%;
+  img{
+    margin: 0 auto 15px;
+  }
+  p{
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+  @include mq( "tablet",max){
+    padding:20px;
+    p{
+      line-height: inherit;
+    }
+
+  }
+
+}
+.login_form{
+  width: 250px;
+  button{
+    width: 100%;
+  }
+  @include mq( "tablet",max){
+    float: left!important;
+  }
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/RobotoBold/RobotoBold.eot');
+    src: url('../fonts/RobotoBold/RobotoBold.eot') format('embedded-opentype'),
+    url('../fonts/RobotoBold/RobotoBold.woff2') format('woff2'),
+    url('../fonts/RobotoBold/RobotoBold.woff') format('woff'),
+    url('../fonts/RobotoBold/RobotoBold.ttf') format('truetype'),
+    url('../fonts/RobotoBold/RobotoBold.svg#RobotoBold') format('svg')
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot');
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot') format('embedded-opentype'),
+    url('../fonts/RobotoRegular/RobotoRegular.woff2') format('woff2'),
+    url('../fonts/RobotoRegular/RobotoRegular.woff') format('woff'),
+    url('../fonts/RobotoRegular/RobotoRegular.ttf') format('truetype'),
+    url('../fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular') format('svg')
+}
+@font-face {
+    font-family: 'roboto_medium';
+    src: url('../fonts/roboto_medium/roboto_medium.eot');
+    src: url('../fonts/roboto_medium/roboto_medium.eot') format('embedded-opentype'),
+    url('../fonts/roboto_medium/roboto_medium.woff2') format('woff2'),
+    url('../fonts/roboto_medium/roboto_medium.woff') format('woff'),
+    url('../fonts/roboto_medium/roboto_medium.ttf') format('truetype'),
+    url('../fonts/roboto_medium/roboto_medium.svg#roboto_medium') format('svg');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro/MyriadPro.eot');
+    src: url('../fonts/MyriadPro/MyriadPro.eot') format('embedded-opentype'),
+    url('../fonts/MyriadPro/MyriadPro.woff2') format('woff2'),
+    url('../fonts/MyriadPro/MyriadPro.woff') format('woff'),
+    url('../fonts/MyriadPro/MyriadPro.ttf') format('truetype'),
+    url('../fonts/MyriadPro/MyriadPro.svg#MyriadPro') format('svg');
+}
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('../fonts/MyriadProSemibold/MyriadProSemibold.eot');
+    src: url('../fonts/MyriadProSemibold/MyriadProSemibold.eot') format('embedded-opentype'),
+    url('../fonts/MyriadProSemibold/MyriadProSemibold.woff2') format('woff2'),
+    url('../fonts/MyriadProSemibold/MyriadProSemibold.woff') format('woff'),
+    url('../fonts/MyriadProSemibold/MyriadProSemibold.ttf') format('truetype'),
+    url('../fonts/MyriadProSemibold/MyriadProSemibold.svg#MyriadProSemibold') format('svg');
+}

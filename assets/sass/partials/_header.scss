@@ -1,0 +1,254 @@
+.top_header{
+  padding: 8px 0;
+  border-bottom: 1px solid $border-color;
+  background-color: $header_color;
+  color: #fff;
+  i{
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  a{
+    font-family: 'MyriadPro';
+    font-size: 16px;
+    color: #fff;
+    &:hover{
+      color: #f2484a;
+    }
+  }
+  .login_signup_links{
+    li{
+      &:last-child{
+        margin-left: 30px;
+      }
+      a{
+        &:hover{
+          color: #f2484a;
+        }
+      }
+    }
+    @include mq( "phablet",max){
+      float: none!important;
+      text-align: center;
+    }
+  }
+  ul{
+    &.site_contact_list{
+      @include mq("desktop",max){
+        float: none!important;
+        margin-bottom: 15px;
+      }
+      @include mq( "tablet-w",max){
+        li.contact_info{
+          display: block;
+          margin-bottom: 3px;
+        }
+        li{
+          &.link_divider{
+            display: none;
+          }
+        }
+        float: left!important;
+      }
+      @include mq( "phablet",max){
+        float: none!important;
+        text-align: center;
+      }
+    }
+
+  }
+}
+.header_logo{
+  display: inline-block;
+  @include mq("tablet-w",max){
+      display: table;
+      margin: 0 auto;
+  }
+}
+.header_center_section{
+  padding: 16px 0;
+}
+.search_item{
+  position: relative;
+  margin-top: 12px;
+  //float: left;
+  //max-width: 400px;
+  input{
+    width: 100%;
+    background-color: #f3f3f3;
+    @include border-radius(5px);
+    border: 1px solid $border-color;
+    padding: 10px;
+    height: 42px;
+    padding-right: 90px;
+
+  }
+  button{
+    position: absolute;
+    right: 0;
+    background-color: $button_base_color;
+    color: #fff;
+    font-size: 18px;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    border: none;
+    @include border-radius(0 5px 5px 0);
+
+    &:hover{
+      background-color: darken($button_base_color,20%);
+    }
+  }
+}
+.support_btn{
+  font-size: 20px;
+   text-transform: uppercase;
+  text-align: center;
+  padding:19px 15px;
+  @include border-radius(5px);
+  display: table;
+  min-width: 280px;
+  float: right;
+  margin-top: 15px;
+  @include mq("tablet",max){
+    float: none;
+    margin: 15px auto 0;
+  }
+  i{
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 30px;
+    vertical-align: baseline;
+  }
+  &:hover{
+    //background-color: $button_base_color;
+    color: #fff;
+  }
+}
+.menu_section{
+  background-color: $menu_bg_color;
+  padding: 15px 0;
+  position: relative;
+  @include mq("tablet",max) {
+    padding: 10px 0;
+  }
+  ul{
+  @include mq("tablet",min){
+    display: block!important;
+  }
+    @include mq("tablet",max){
+      position: absolute;
+      width: 100%;
+      margin-left: 0;
+      left: 0;
+      right: 0;
+      top: 53px;
+      background-color: $menu_bg_color;
+      z-index: 3;
+      display: none;
+      li{
+        display: block;
+        padding: 0;
+        a{
+          padding: 10px 15px;
+          &:hover{
+            background-color: $button_base_color;
+          }
+        }
+      }
+    }
+  }
+  li{
+    a{
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: 'RobotoRegular';
+      padding-right: 15px;
+      display: block;
+      @include mq("tablet-w",max){
+        font-size: 16px;
+      }
+    }
+  }
+  .toggle_item{
+    display: none;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+    @include mq("tablet",max){
+      display: inline-block;
+    }
+  }
+}
+.top_slider{
+  //background:  $button_base_color; /* Old browsers */
+  //background: -moz-linear-gradient(top,  $button_base_color 0%, darken($button_base_color,10%) 100%); /* FF3.6-15 */
+  //background: -webkit-linear-gradient(top,  $button_base_color 0%,darken($button_base_color,10%) 100%); /* Chrome10-25,Safari5.1-6 */
+  //background: linear-gradient(to bottom,  $button_base_color 0%,darken($button_base_color,10%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32a3e0', endColorstr='#0190de',GradientType=0 ); /* IE6-9 */
+  min-height: 370px;
+  background:  no-repeat center;
+  background-size: cover;
+  .slick-dots {
+    bottom: -10px;
+    li button{
+      border: 2px solid $button_base_color;
+      @include border-radius(50%);
+      &:before{
+        content: " ";
+      }
+    }
+  }
+
+  .slick-active{
+    button{
+      background: $button_base_color!important;
+    }
+  }
+  .slick-dotted.slick-slider{
+    min-height: 290px;
+  }
+  .slider_title{
+    font-size: 54px;
+    color: #032e44;
+    font-family: 'RobotoRegular';
+    @include mq("tablet-w",max){
+     font-size: 45px;
+    }
+    @include mq( "tablet-small",max){
+      font-size: 35px;
+    }
+  }
+  .slider_item{
+    background-position: center right;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    &:focus{
+      outline: none!important;
+    }
+    @include mq("tablet",max){
+      background-size: 60%;
+      background-position: right bottom;
+    }
+  }
+  .learn_more_btn{
+    font-size: 18px;
+    font-family: 'RobotoBold';
+    color: #032e44;
+    border: 3px solid #032e44;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 52px;
+    margin-top: 15px;
+    @include border-radius(5px);
+    @include mq("tablet",max){
+      padding: 10px 30px;
+    }
+    &:hover{
+      background-color: rgba($menu_bg_color,0.2);
+    }
+  }
+}

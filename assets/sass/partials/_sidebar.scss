@@ -1,0 +1,128 @@
+.categories_menu{
+  margin-top: 15px;
+  &:hover .category_btn{
+    color: $button_base_color;
+    border: 1px solid $border-color;
+    border-bottom:1px solid transparent!important;
+  }
+    li{
+      position: relative;
+      a{
+        display: block;
+        font-size: 16px;
+        padding: 5px 10px;
+        &:hover{
+          background-color: $button_base_color;
+          color: #fff;
+        }
+        i{
+          vertical-align: middle;
+        }
+        &.category_btn{
+          font-size: 18px;
+          padding: 10px;
+          //display: inline-block;
+          background-color: #fff;
+          border: 1px solid $border-color;
+          position: relative;
+          z-index: 10;
+          &:hover{
+            color: $button_base_color;
+            border: 1px solid $border-color;
+            border-bottom:1px solid transparent!important;
+          }
+          .fa-angle-down{
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  .category_links{
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    border: 1px solid $border-color;
+    display: none;
+    background-color: #fff;
+    z-index: 3;
+    @include transition(all 0.5s ease-in-out);
+
+    li{
+      a{
+        i{
+          float: right;
+        }
+      }
+    }
+
+  }
+  .subcategory_links{
+      position: absolute;
+      left: 100%;
+      width: 100%;
+      top: 0;
+      display: none;
+      border: 1px solid $border-color;
+      background-color: #fff;
+      z-index: 110;
+
+    li{
+      a{
+        font-size: 14px;
+      }
+    }
+    &.large_dropdown{
+      min-width: 600px;
+      @include mq("tablet-w",max){
+        min-width: 500px;
+      }
+      li{
+        width: 50%;
+        float: left;
+      }
+    }
+    @include mq("tablet",max){
+      position: relative;
+      left: 0;
+      min-width: inherit!important;
+      li{
+        width: 100%!important;
+      }
+    }
+   }
+  &:hover .category_links{
+    display: block;
+    @include transition(all 0.5s ease-in-out);
+  }
+}
+.section_title{
+  color: $button_base_color;
+  font-family: 'RobotoBold';
+}
+.filter_title{
+  background-color: $button_base_color;
+  color: #fff;
+  padding: 7px 10px;
+  font-size: 17px;
+}
+.category_item{
+  @include mq("tablet-w",max){
+    display: inline-block;
+    min-width: 240px;
+  }
+}
+.page_sidebar{
+  .search_item{
+    margin: 18px 0;
+    button{
+      width: 45px;
+      @include border-radius(0);
+    }
+    input{
+      @include border-radius(0);
+      padding-right: 50px;
+    }
+  }
+
+}
