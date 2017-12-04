@@ -5822,6 +5822,9 @@ a, a:hover, a:focus {
   width: 100%;
   float: left; }
 
+.margin-top-20 {
+  margin-top: 20px; }
+
 button, button:hover, button:focus, input:focus {
   outline: none; }
 
@@ -5847,7 +5850,11 @@ button, button:hover, a, a:hover {
     margin-right: 10px;
     vertical-align: middle; }
   .btn_default:hover {
-    background: #35a4e0; }
+    background: #1e8ac4;
+    color: #fff; }
+  .btn_default:focus product_items_box {
+    background: #1e8ac4;
+    color: #fff; }
   @media only screen and (max-width: 559px) {
     .btn_default {
       font-size: 13px;
@@ -5974,25 +5981,25 @@ button, button:hover, a, a:hover {
   .product_view_block .pagination li span {
     background-color: transparent;
     border: none;
-    color: #000;
+    color: #fff;
     padding: 3px 5px; }
     .product_view_block .pagination li span:hover {
       background-color: transparent;
-      color: #000; }
+      color: #043e58; }
   .product_view_block .pagination li a {
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     color: #fff;
     padding: 3px 5px; }
     .product_view_block .pagination li a:hover {
       background-color: transparent;
-      color: #f2484a; }
+      color: #043e58; }
     .product_view_block .pagination li a:focus {
       background-color: transparent;
       color: #f2484a; }
   .product_view_block .pagination li.active a {
     background-color: transparent;
-    color: #f2484a;
+    color: #fff;
     font-weight: 700;
     z-index: 2; }
 
@@ -6027,6 +6034,7 @@ button, button:hover, a, a:hover {
     padding: 0 5px;
     color: #000; }
   .product_items_box .delete_item {
+    font-size: 13px;
     cursor: pointer; }
     .product_items_box .delete_item:hover {
       color: #f2484a; }
@@ -6105,6 +6113,10 @@ button, button:hover, a, a:hover {
   border-bottom: 1px solid #cccccc;
   background-color: #043e58;
   color: #fff; }
+  .top_header .site_contact_list i:first-child {
+    font-size: 18px; }
+  .top_header .site_contact_list a:first-child {
+    font-size: 16px; }
   .top_header i {
     font-size: 24px;
     vertical-align: middle;
@@ -6151,10 +6163,14 @@ button, button:hover, a, a:hover {
 
 .header_center_section {
   padding: 16px 0; }
+  .header_center_section .support_img {
+    margin-top: 10px; }
+    .header_center_section .support_img img {
+      max-width: 130px; }
 
 .search_item {
   position: relative;
-  margin-top: 12px; }
+  margin-top: 19px; }
   .search_item input {
     width: 100%;
     background-color: #f3f3f3;
@@ -6164,7 +6180,7 @@ button, button:hover, a, a:hover {
     border-radius: 5px;
     border: 1px solid #cccccc;
     padding: 10px;
-    height: 42px;
+    height: 37px;
     padding-right: 90px; }
   .search_item button {
     position: absolute;
@@ -6210,7 +6226,6 @@ button, button:hover, a, a:hover {
 
 .menu_section {
   background-color: #f2484a;
-  padding: 15px 0;
   position: relative; }
   @media only screen and (max-width: 767px) {
     .menu_section {
@@ -6236,16 +6251,20 @@ button, button:hover, a, a:hover {
           padding: 10px 15px; }
           .menu_section ul li a:hover {
             background-color: #35a4e0; } }
-  .menu_section li a {
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: 'RobotoRegular';
-    padding-right: 15px;
-    display: block; }
-    @media only screen and (max-width: 991px) {
-      .menu_section li a {
-        font-size: 16px; } }
+  .menu_section li {
+    padding: 0; }
+    .menu_section li a {
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: 'RobotoRegular';
+      display: block;
+      padding: 15px; }
+      @media only screen and (max-width: 991px) {
+        .menu_section li a {
+          font-size: 16px; } }
+      .menu_section li a:hover {
+        background-color: #ed686a; }
   .menu_section .toggle_item {
     display: none;
     font-size: 30px;
@@ -6257,10 +6276,11 @@ button, button:hover, a, a:hover {
 
 .top_slider {
   min-height: 370px;
-  background: no-repeat center;
+  background: no-repeat top -20px center;
   background-size: cover; }
   .top_slider .slick-dots {
-    bottom: -10px; }
+    bottom: -10px;
+    margin-bottom: 9px; }
     .top_slider .slick-dots li button {
       border: 2px solid #35a4e0;
       -webkit-border-radius: 50%;
@@ -6319,7 +6339,18 @@ button, button:hover, a, a:hover {
 .top_footer .footer_blocks h3 {
   font-size: 18px;
   color: #fff;
-  font-family: RobotoBold; }
+  font-family: RobotoBold;
+  position: relative;
+  padding-bottom: 10px; }
+  .top_footer .footer_blocks h3:after {
+    content: " ";
+    width: 50px;
+    height: 2px;
+    background-color: #35a4e0;
+    border-top: 2px solid #35a4e0;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
 
 .top_footer .footer_blocks ul li a {
   font-size: 14px;
@@ -6434,7 +6465,7 @@ button, button:hover, a, a:hover {
     display: block; } }
 
 .home_center_part {
-  background-color: #f8f8f8;
+  background-color: #fff;
   padding: 55px 0;
   border-bottom: 1px solid #cccccc; }
 
@@ -6480,7 +6511,8 @@ button, button:hover, a, a:hover {
       display: table-cell;
       vertical-align: middle; }
     .categories_block .categories_link:hover {
-      background-color: #f2484a; }
+      background-color: #35a4e0;
+      color: #fff; }
   .categories_block .categories_menu_border {
     border: 1px solid #fff;
     padding-top: 70px; }
@@ -6516,18 +6548,21 @@ button, button:hover, a, a:hover {
     right: 0; }
 
 .tab_main_content {
-  background-color: #fff; }
+  background-color: #fbfafa; }
 
 .product_block {
   width: 23.5%;
   margin: 0.5%;
   display: inline-block;
   vertical-align: top;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 30px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 30px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px -14px rgba(0, 0, 0, 0.75);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #cccccc;
   padding: 15px 15px 0 15px;
   position: relative;
   min-height: 420px; }
@@ -6763,7 +6798,8 @@ button, button:hover, a, a:hover {
 
 .product_view_block {
   padding: 5px 15px;
-  background-color: #35a4e0; }
+  background-color: #35a4e0;
+  margin-bottom: 10px; }
   .product_view_block .product_view_item span {
     font-size: 25px;
     cursor: pointer;
@@ -6813,7 +6849,7 @@ button, button:hover, a, a:hover {
   .favorite_btn:hover i {
     color: #fff !important; }
 
-.single_product .product_title:hover {
+.single_product .product_view_block product_title:hover {
   text-decoration: none; }
 .single_product .qty_item {
   float: left;

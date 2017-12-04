@@ -9,10 +9,14 @@ ul{
 a,a:hover,a:focus{
   text-decoration: none;
   color: $text-base_color;
+
 }
 .full-width-left{
   width: 100%;
   float: left;
+}
+.margin-top-20{
+  margin-top: 20px;
 }
 button, button:hover, button:focus,input:focus{
   outline: none;
@@ -37,7 +41,12 @@ button,button:hover,a,a:hover{
 
   }
   &:hover{
-    background: $button_base_color;
+    background: darken($button_base_color,10%);
+    color: #fff;
+  }
+  &:focus product_items_box{
+    background: darken($button_base_color,10%);
+    color: #fff;
   }
   @include mq( "phablet",max){
     font-size: 13px;
@@ -174,21 +183,22 @@ button,button:hover,a,a:hover{
       span{
         background-color: transparent;
         border: none;
-        color: #000;
+        color: #fff;
         padding: 3px 5px;
         &:hover{
           background-color: transparent;
-          color: #000;
+          color: #043e58;
+
         }
       }
       a{
-        background-color: #fff;
+        background-color: transparent;
         border: none;
         color: #fff;
         padding: 3px 5px;
         &:hover{
           background-color: transparent;
-          color: $menu_bg_color;
+          color: #043e58;
         }
         &:focus{
           background-color: transparent;
@@ -198,7 +208,7 @@ button,button:hover,a,a:hover{
       &.active{
         a{
           background-color: transparent;
-          color: $menu_bg_color;
+          color: #fff;
           font-weight: 700;
           z-index: 2;
         }
@@ -244,6 +254,7 @@ button,button:hover,a,a:hover{
     color: #000;
   }
   .delete_item{
+    font-size: 13px;
     cursor: pointer;
     &:hover{
       color: $menu_bg_color;
