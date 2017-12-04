@@ -6248,9 +6248,7 @@ button, button:hover, a, a:hover {
         display: block;
         padding: 0; }
         .menu_section ul li a {
-          padding: 10px 15px; }
-          .menu_section ul li a:hover {
-            background-color: #35a4e0; } }
+          padding: 10px 15px; } }
   .menu_section li {
     padding: 0; }
     .menu_section li a {
