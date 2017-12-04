@@ -42,7 +42,7 @@ $('span.list_view_btn').on('click',function(){
 $('.favorite_btn').click(function() {
     $('.favorite_btn i').toggleClass('fa-heart-o').css('color',"#ffffff");
 },function() {
-    $('.favorite_btn i').toggleClass('fa-heart-o').css('color',"#fed518");
+    $('.favorite_btn i').toggleClass('fa-heart-o').css('color',"#fff");
 });
 
 // $(document).ready(function(){

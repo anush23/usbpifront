@@ -1,5 +1,5 @@
 .home_center_part{
-  background-color: $bg_color;
+  background-color: #fff;
   padding: 55px 0;
   border-bottom: 1px solid $border-color;
 
@@ -44,7 +44,8 @@
       vertical-align: middle;
     }
     &:hover{
-      background-color: $menu_bg_color;
+      background-color: $button_base_color;
+      color: #fff;
     }
   }
   .categories_menu_border{
@@ -96,15 +97,19 @@
   }
 }
 .tab_main_content{
-  background-color: #fff;
+  background-color: #fbfafa;
 }
 .product_block{
   width: 23.5%;
   margin: 0.5%;
   display: inline-block;
   vertical-align: top;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 30px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px -14px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px -14px rgba(0,0,0,0.75);
+
   @include border-radius(5px);
-  border: 1px solid $border-color;
   padding: 15px 15px 0 15px;
   position: relative;
   min-height: 420px;

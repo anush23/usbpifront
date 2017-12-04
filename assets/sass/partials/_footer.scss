@@ -6,6 +6,18 @@
   font-size: 18px;
   color: #fff;
   font-family: RobotoBold;
+  position: relative;
+  padding-bottom: 10px;
+  &:after{
+    content: " ";
+    width: 50px;
+    height: 2px;
+    background-color: $button_base_color;
+    border-top: 2px solid $button_base_color;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 .top_footer .footer_blocks ul li a{
   font-size: 14px;

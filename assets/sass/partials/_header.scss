@@ -1,4 +1,11 @@
 .top_header{
+  .site_contact_list i:first-child{
+    font-size: 18px;
+  }
+  .site_contact_list a:first-child{
+    font-size: 16px;
+  }
+
   padding: 8px 0;
   border-bottom: 1px solid $border-color;
   background-color: $header_color;
@@ -69,10 +76,16 @@
 }
 .header_center_section{
   padding: 16px 0;
+  .support_img{
+    margin-top: 10px;
+    img{
+      max-width: 130px;
+    }
+  }
 }
 .search_item{
   position: relative;
-  margin-top: 12px;
+  margin-top: 19px;
   //float: left;
   //max-width: 400px;
   input{
@@ -81,7 +94,7 @@
     @include border-radius(5px);
     border: 1px solid $border-color;
     padding: 10px;
-    height: 42px;
+    height: 37px;
     padding-right: 90px;
 
   }
@@ -104,7 +117,7 @@
 }
 .support_btn{
   font-size: 20px;
-   text-transform: uppercase;
+  text-transform: uppercase;
   text-align: center;
   padding:19px 15px;
   @include border-radius(5px);
@@ -129,7 +142,7 @@
 }
 .menu_section{
   background-color: $menu_bg_color;
-  padding: 15px 0;
+  //padding: 15px 0;
   position: relative;
   @include mq("tablet",max) {
     padding: 10px 0;
@@ -161,17 +174,22 @@
     }
   }
   li{
+    padding: 0;
     a{
       color: #fff;
       font-size: 14px;
       text-transform: uppercase;
       font-family: 'RobotoRegular';
-      padding-right: 15px;
       display: block;
+      padding: 15px;
       @include mq("tablet-w",max){
         font-size: 16px;
       }
+      &:hover{
+        background-color: #ed686a;
+      }
     }
+
   }
   .toggle_item{
     display: none;
@@ -190,10 +208,11 @@
   //background: linear-gradient(to bottom,  $button_base_color 0%,darken($button_base_color,10%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32a3e0', endColorstr='#0190de',GradientType=0 ); /* IE6-9 */
   min-height: 370px;
-  background:  no-repeat center;
+  background:  no-repeat top -20px center;
   background-size: cover;
   .slick-dots {
     bottom: -10px;
+    margin-bottom: 9px;
     li button{
       border: 2px solid $button_base_color;
       @include border-radius(50%);
